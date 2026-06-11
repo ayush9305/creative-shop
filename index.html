@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Creative Shop | Premium Trophies & Awards</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+html{
+scroll-behavior:smooth;
+}
+
+body{
+background:#0a0a0a;
+color:white;
+overflow-x:hidden;
+}
+
+nav{
+position:fixed;
+top:0;
+width:100%;
+padding:18px 8%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+background:rgba(0,0,0,.9);
+backdrop-filter:blur(10px);
+z-index:1000;
+}
+
+.logo{
+font-size:30px;
+font-weight:700;
+color:#FFD700;
+}
+
+nav ul{
+display:flex;
+gap:25px;
+list-style:none;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+transition:.3s;
+}
+
+nav a:hover{
+color:#FFD700;
+}
+
+.hero{
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:20px;
+background:linear-gradient(rgba(0,0,0,.75),rgba(0,0,0,.75)),
+url('https://images.unsplash.com/photo-1517649763962-0c623066013b?w=1600');
+background-size:cover;
+background-position:center;
+}
+
+.hero h1{
+font-size:4rem;
+color:#FFD700;
+animation:slideUp 1.2s ease;
+}
+
+.hero p{
+margin-top:15px;
+font-size:1.2rem;
+max-width:700px;
+}
+
+.btn{
+display:inline-block;
+margin-top:30px;
+padding:15px 35px;
+background:#FFD700;
+color:black;
+font-weight:700;
+border-radius:40px;
+text-decoration:none;
+position:relative;
+overflow:hidden;
+}
+
+.btn::before{
+content:'';
+position:absolute;
+top:0;
+left:-100%;
+width:100%;
+height:100%;
+background:rgba(255,255,255,.5);
+transform:skewX(-20deg);
+animation:shine 3s infinite;
+}
+
+section{
+padding:100px 8%;
+}
+
+.section-title{
+text-align:center;
+font-size:2.5rem;
+color:#FFD700;
+margin-bottom:50px;
+}
+
+.about{
+text-align:center;
+max-width:900px;
+margin:auto;
+font-size:18px;
+line-height:1.8;
+}
+
+.gallery{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+gap:25px;
+}
+
+.gallery img{
+width:100%;
+height:350px;
+object-fit:cover;
+border-radius:18px;
+border:2px solid #333;
+transition:.4s;
+}
+
+.gallery img:hover{
+transform:translateY(-10px) scale(1.03);
+border-color:#FFD700;
+box-shadow:0 0 25px rgba(255,215,0,.5);
+}
+
+.contact{
+background:#111;
+padding:40px;
+border-radius:20px;
+text-align:center;
+}
+
+.contact p{
+margin:15px 0;
+font-size:18px;
+}
+
+.whatsapp{
+position:fixed;
+right:20px;
+bottom:20px;
+background:#25D366;
+width:60px;
+height:60px;
+display:flex;
+justify-content:center;
+align-items:center;
+border-radius:50%;
+font-size:30px;
+text-decoration:none;
+color:white;
+animation:pulse 2s infinite;
+}
+
+footer{
+background:black;
+padding:25px;
+text-align:center;
+margin-top:50px;
+}
+
+@keyframes slideUp{
+from{
+opacity:0;
+transform:translateY(50px);
+}
+to{
+opacity:1;
+transform:translateY(0);
+}
+}
+
+@keyframes pulse{
+50%{
+transform:scale(1.12);
+}
+}
+
+@keyframes shine{
+100%{
+left:150%;
+}
+}
+
+</style>
+</head>
+
+<body>
+
+<nav>
+<div class="logo">Creative Shop</div>
+
+<ul>
+<li><a href="#about">About</a></li>
+<li><a href="#gallery">Gallery</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+</nav>
+
+<section class="hero">
+
+<div>
+<h1>Creative Shop</h1>
+
+<p>
+Premium Trophies, Awards, Cups, Medals & Custom Engraving
+for Schools, Colleges, Sports Events and Corporate Functions.
+</p>
+
+<a href="https://wa.me/918708341317?text=Hello%20Creative%20Shop,%20I%20want%20to%20order%20a%20trophy." target="_blank" class="btn">
+Order on WhatsApp
+</a>
+
+</div>
+
+</section>
+
+<section id="about">
+
+<h2 class="section-title">About Us</h2>
+
+<div class="about">
+Creative Shop is a trusted trophy and award supplier in Lucknow.
+We provide premium trophies, medals, cups and customized awards
+for tournaments, schools, colleges, coaching institutes and
+corporate events.
+</div>
+
+</section>
+
+<section id="gallery">
+
+<h2 class="section-title">Featured Trophies</h2>
+
+<div class="gallery">
+
+<img src="https://i.ibb.co/kg0MLNfL/Whats-App-Image-2026-06-11-at-10-57-07-PM-1.jpg" alt="Trophy">
+<img src="https://i.ibb.co/tpQ6MK4M/Whats-App-Image-2026-06-11-at-10-57-06-PM-1.jpg" alt="Trophy">
+<img src="https://i.ibb.co/pBQzWR8Q/Whats-App-Image-2026-06-11-at-10-57-05-PM-1.jpg" alt="Trophy">
+<img src="https://i.ibb.co/G3rRnT2W/Whats-App-Image-2026-06-11-at-10-57-07-PM.jpg" alt="Trophy">
+<img src="https://i.ibb.co/tTNJ8L03/Whats-App-Image-2026-06-11-at-11-44-37-PM-MM.jpg" alt="Trophy">
+<img src="https://i.ibb.co/pv98tZ6X/Whats-App-Image-2026-06-11-at-11-48-09-PM.jpg" alt="Trophy">
+
+</div>
+
+</section>
+
+<section id="contact">
+
+<div class="contact">
+
+<h2 class="section-title">Contact Us</h2>
+
+<p>📞 8707341317</p>
+
+<p>
+📍 114/36, Nazirabad, Aminabad,
+Lucknow, Uttar Pradesh 226018
+</p>
+
+<p>Custom Trophy Orders Available</p>
+
+<a href="https://wa.me/918708341317?text=Hello%20Creative%20Shop,%20I%20want%20to%20order%20a%20trophy." target="_blank" class="btn">
+Chat on WhatsApp
+</a>
+
+<br><br>
+
+<a href="https://maps.app.goo.gl/cpdJHDBjdUQCf92SA?g_st=ac"
+target="_blank"
+class="btn">
+📍 View Shop Location
+</a>
+</div>
+
+</section>
+
+<a class="whatsapp" href="https://wa.me/918708341317">
+💬
+</a>
+
+<footer>
+© 2026 Creative Shop | Premium Trophy Manufacturer
+</footer>
+
+</body>
+</html>
